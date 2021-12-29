@@ -3,10 +3,10 @@ def swapFileData():
     file1= input("Name it")
     file2= input("Swap it")
 
-    with open("Research.txt",'r') as a :
+    with open(file1,'r') as a :
         data_a = a.read()
 
-    with open("Financial.txt",'r') as b:
+    with open(file2,'r') as b:
         data_b = b.read()
 
     with open("Research.txt",'w+') as a:
